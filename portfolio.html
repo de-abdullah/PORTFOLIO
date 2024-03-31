@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - MUHAMMAD ABDULLAH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CSS -->
+    <style>
+        /* Custom CSS styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://source.unsplash.com/1600x900/?nature,technology'); /* Background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #ffffff; /* Text color */
+            transition: background-color 0.5s ease; /* Smooth transition for background color */
+        }
+        
+        body.dark-mode {
+            background-color: #333333;
+        }
+        
+        header {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            padding: 20px;
+            text-align: center;
+            color: #ffffff; /* White text color */
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth transition for link color */
+        }
+        
+        nav ul li a:hover {
+            color: #ffd700; /* Change link color on hover */
+        }
+        
+        main {
+            padding: 20px;
+        }
+
+        .project {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* White shadow */
+        }
+
+        .project h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #ffd700; /* Gold color for project headings */
+            text-transform: uppercase;
+        }
+
+        .project p {
+            margin-bottom: 10px;
+            color: #ffffff; /* White color for project descriptions */
+        }
+
+        .project a {
+            color: #ffd700; /* Gold color for project links */
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease; /* Smooth transition for link color */
+        }
+
+        .project a:hover {
+            color: #ffffff; /* White color on hover */
+        }
+
+        /* Button Styles */
+        .toggle-button {
+            background-color: #000000; /* Black background for button */
+            border: none;
+            color: #ffffff; /* White text color */
+            padding: 15px 25px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999; /* Ensure button stays on top */
+        }
+
+        .toggle-button:hover {
+            background-color: #333333; /* Darker background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MUHAMMAD ABDULLAH</h1>
+        <nav>
+            <ul>
+                <li><a href="personalportfolio.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="social.html">Social</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>My Projects</h2>
+            
+            <!-- Example project -->
+            <div class="project">
+                <h2>Project 1</h2>
+                <p>KID PROJECT</p>
+                <a href="C:\Users\DELL\Desktop\YUSRA PROJECT\home.html">View Project</a>
+            </div>
+
+
+            <div class="project">
+                <h2>Project 2</h2>
+                <p>LOGIN PAGE</p>
+                <a href="C:\Users\DELL\Desktop\PORTFOLIO MATERIAL\LOGIN PAGE\index1.html">View Project</a>
+            </div>
+
+            <!-- Add more projects as needed -->
+            
+        </section>
+    </main>
+
+    <!-- Use an icon instead of a button -->
+    <span class="toggle-button" onclick="toggleDarkMode()">
+        <i class="fas fa-moon"></i> <!-- Font Awesome moon icon -->
+    </span>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
